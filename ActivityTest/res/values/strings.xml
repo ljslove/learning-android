@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">ActivityTest</string>
+    <string name="button1">Button1</string>
+    <string name="mian_add_item">Add</string>
+    <string name="mian_remove_item">remove</string>
+    <string name="button2">Button2</string>
+    <string name="button_11">intent to second activity</string>
+    <string name="button_3">Button3</string>
+    <string name="button_12">Intent to ThirdActivity</string>
+    <string name="button_13">Intent one browser</string>
+    <string name="button_14">Intent to dial</string>
+    <string name="button_4">The forth Activity</string>
+    <string name="button_15">My scheme to other activity</string>
+    <string name="button_6">Button6</string>
+    <string name="button_16">Use intent to transmit data</string>
+    <string name="button_17">Get data from the next Activity</string>
+    <string name="button_7">Back data</string>
+    <string name="button_8">Button8</string>
+    <string name="text_view">This is a normal activity</string>
+    <string name="text_view_1">This is a dialog activity</string>
+    <string name="button_21">NormalActivity</string>
+    <string name="button_22">DialogActivity</string>
+    
+    
+
+</resources>
