@@ -13,14 +13,14 @@ import android.net.Uri;
 import android.util.Log;
 
 public class FirstActivity extends Activity {
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
-		super.onCreate(savedInstanceState);   //µ÷ÓÃ¸¸ÀàµÄonCreate()·½·¨
-		setContentView(R.layout.first_layout);  //¸øµ±Ç°µÄ»î¶¯¼ÓÔØÒ»¸ö²¼¾Ö
+		super.onCreate(savedInstanceState);   //ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½onCreate()ï¿½ï¿½ï¿½ï¿½
+		setContentView(R.layout.first_layout);  //ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ä»î¶¯ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Button button1=(Button)findViewById(R.id.button_1);
 		button1.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -28,32 +28,32 @@ public class FirstActivity extends Activity {
 			}
 		});
 		 /*
-		  * Ê¹ÓÃÏÔÊ¾µÄIntentÀ´Æô¶¯»î¶¯
-		  * IntentÒ»°ã±»ÓÃÓÚÆô¶¯»î¶¯£¬Æô¶¯·şÎñÒÔ¼°·¢ËÍ¹ã²¥
-		  * 
+		  * Ê¹ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Intentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶¯
+		  * IntentÒ»ï¿½ã±»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Í¹ã²¥
+		  *
 		  */
 		 Button button11=(Button)findViewById(R.id.button_11);
 		 button11.setOnClickListener(new View.OnClickListener(){
 			 @Override
-			 
+
 			 public void onClick(View v){
 				 Intent intent=new Intent(FirstActivity.this,SecondActivity.class);
 				 startActivity(intent);
 			 }
 		 });
-		 
-		 
+
+
 		 /*
-		  * Ê¹ÓÃÒşÊ½µÄIntentÀ´Æô¶¯Ò»¸ö»î¶¯
-		  * 
-		  * ĞèÒªÔÚAndroidManifestÎÄ¼şÖĞ£¬¸ø»î¶¯¼ÓÈë<intent-filter>
-		  * µ±Ò»¸ö»î¶¯µÄ<intent-filter>ºÍÒ»¸öIntentµÄactionºÍcategoryÆ¥ÅäÊ±£¬
-		  * ²ÅÄÜÆô¶¯Õâ¸ö»î¶¯
-		  * action+categoryÀ´Æô¶¯»î¶¯
+		  * Ê¹ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Intentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½î¶¯
+		  *
+		  * ï¿½ï¿½Òªï¿½ï¿½AndroidManifestï¿½Ä¼ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½î¶¯ï¿½ï¿½ï¿½ï¿½<intent-filter>
+		  * ï¿½ï¿½Ò»ï¿½ï¿½ï¿½î¶¯ï¿½ï¿½<intent-filter>ï¿½ï¿½Ò»ï¿½ï¿½Intentï¿½ï¿½actionï¿½ï¿½categoryÆ¥ï¿½ï¿½Ê±ï¿½ï¿½
+		  * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶¯
+		  * action+categoryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶¯
 		  */
 		 Button button12=(Button)findViewById(R.id.button_12);
 		 button12.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -62,16 +62,16 @@ public class FirstActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		 
+
 		 /*
-		  * IntentµÄÆäËûÓÃ·¨£¬ÊÊÓÃÒşÊ½Intent¿ÉÒÔÆô¶¯ÆäËûÓ¦ÓÃµÄ»î¶¯
-		  * Ê¹ÓÃschemeĞ­Òé£¬±ÈÈçÆô¶¯ä¯ÀÀÆ÷
-		  * action+schemeÀ´Æô¶¯»î¶¯
-		  * 
+		  * Intentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Intentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ÃµÄ»î¶¯
+		  * Ê¹ï¿½ï¿½schemeĞ­ï¿½é£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		  * action+schemeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶¯
+		  *
 		  */
 		 Button button13=(Button)findViewById(R.id.button_13);
 		 button13.setOnClickListener(new View.OnClickListener(){
-			 
+
 			 public void onClick(View v)
 			 {
 				 Intent intent=new Intent(Intent.ACTION_VIEW);
@@ -79,31 +79,31 @@ public class FirstActivity extends Activity {
 				 startActivity(intent);
 			 }
 		 });
-		 
+
 		 /*
-		  *µ÷ÓÃÏµÍ³²¦ºÅ½çÃæ 
-		  * 
+		  *ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½Å½ï¿½ï¿½ï¿½
+		  *
 		  */
 		 Button button14=(Button)findViewById(R.id.button_14);
 		 button14.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent(Intent.ACTION_DIAL);
 				intent.setData(Uri.parse("tel:10086"));
 				startActivity(intent);
-				
+
 			}
 		});
 		 /*
-		  * ×Ô¼º¶¨ÒåÒ»¸ödataÀ´Æô¶¯Ó¦ÓÃ
-		  * intent+action+×Ô¶¨ÒåµÄschemeÀ´Æô¶¯»î¶¯
-		  * 
+		  * ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½dataï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½
+		  * intent+action+ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½schemeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶¯
+		  *
 		  */
 		 Button button15=(Button)findViewById(R.id.button_15);
 		 button15.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -112,16 +112,16 @@ public class FirstActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		 
+
 		 /*
-		  * Ê¹ÓÃIntentÔÚ»î¶¯Ö®¼ä´«µİÊı¾İ
-		  * Ê¹ÓÃintentÏòÏÂÒ»¸ö»î¶¯´«µİÊı¾İ
-		  * ÏÖ½«Êı×é´«µİ¸øÒ»¸ö¼üÖµ¶Ô£¬Æô¶¯ÁíÒ»¸ö»î¶¯ºó£¬ÔÙ°ÑÖµ´Ó¼üÖµ¶ÔÈ¡³öÀ´
-		  * 
+		  * Ê¹ï¿½ï¿½Intentï¿½Ú»î¶¯Ö®ï¿½ä´«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		  * Ê¹ï¿½ï¿½intentï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½î¶¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		  * ï¿½Ö½ï¿½ï¿½ï¿½ï¿½é´«ï¿½İ¸ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Öµï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½î¶¯ï¿½ï¿½ï¿½ï¿½ï¿½Ù°ï¿½Öµï¿½Ó¼ï¿½Öµï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+		  *
 		  */
 		 Button button16=(Button)findViewById(R.id.button_16);
 		 button16.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -129,27 +129,46 @@ public class FirstActivity extends Activity {
 				Intent intent=new Intent(FirstActivity.this,FifithActivity.class);
 				intent.putExtra("extra_data", data);
 				startActivity(intent);
-				
+
 			}
 		});
 		 /*
-		  * ÊÊÓÃIntentÏòÉÏÒ»¸ö»î¶¯·µ»ØÊı¾İ
-		  * Æô¶¯ÏÂÒ»¸ö»î¶¯Ê±£¬ÒªÊ¹ÓÃstartActivityForResult()·½·¨£¬Ôò·µ»Ø
-		  * µÄÊı×é´ÓonActivityReslt()·½·¨ÖĞ»ñÈ¡
-		  * 
+		  * ï¿½ï¿½ï¿½ï¿½Intentï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½î¶¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		  * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½î¶¯Ê±ï¿½ï¿½ÒªÊ¹ï¿½ï¿½startActivityForResult()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½
+		  * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½onActivityReslt()ï¿½ï¿½ï¿½ï¿½ï¿½Ğ»ï¿½È¡
+		  *
 		  */
 		 Button button17=(Button)findViewById(R.id.button_17);
 		 button17.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent(FirstActivity.this,SixthActivity.class);
 				startActivityForResult(intent,1);
-				
+
 			}
 		});
-		 
+		/*
+		 * ä½¿ç”¨MIME Typeæ¥å¯åŠ¨æ´»åŠ¨,MIME Typeè¡¨æ˜Activityå¯ä»¥å¤„ç†çš„æ•°æ®ç±»å‹
+		 * MIMEä¸ºå¯ä»¥å¤„ç†çš„æ•°æ®ç±»å‹ï¼Œå¯ä»¥ä¸ºæ ‡å‡†çš„MIMEï¼Œä¹Ÿå¯ä»¥æ˜¯è‡ªå®šä¹‰çš„
+		 * ä»¥ä¸‹ç¨‹åºä¸ºè°ƒç”¨å›¾åº“
+		 *
+		 *
+		 */
+		Button button18=(Button)findViewById(R.id.button_18);
+		button18.setOnClickListener(new View.OnClickListener() {
+
+		 @Override
+		 public void onClick(View v) {
+			 // TODO Auto-generated method stub
+			 Intent intent=new Intent(Intent.ACTION_VIEW);
+			 intent.setType("image/jpeg");
+			 startActivity(intent);
+
+		 }
+	 });
+
 	}
 		 @Override
 		 protected void onActivityResult(int requestCode,int resultCode,Intent data){
@@ -163,28 +182,28 @@ public class FirstActivity extends Activity {
 			 default:
 			 }
 		 }
-		 
-		 
-		 
-		 
-		 
 
-	
-	/*ÔÚresÖĞ´´½¨ÁËmenuµÄ²¼¾Öºó£¬ĞèÒª½«²Ëµ¥²¼¾Ö¼ÓÔØµ½»î¶¯ÖĞ
-	 
+
+
+
+
+
+
+	/*ï¿½ï¿½resï¿½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½menuï¿½Ä²ï¿½ï¿½Öºï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½Øµï¿½ï¿½î¶¯ï¿½ï¿½
+
 	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
 	 */
 	public boolean onCreateOptionsMenu(Menu menu){
-		getMenuInflater().inflate(R.menu.main, menu);  //¸øµ±Ç°»î¶¯´´½¨²Ëµ¥
-		return true;   //true±íÊ¾´´½¨µÄ²Ëµ¥ÏÔÊ¾£¬false±íÊ¾´´½¨µÄ²Ëµ¥²»ÏÔÊ¾
-		
+		getMenuInflater().inflate(R.menu.main, menu);  //ï¿½ï¿½ï¿½ï¿½Ç°ï¿½î¶¯ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+		return true;   //trueï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ä²Ëµï¿½ï¿½ï¿½Ê¾ï¿½ï¿½falseï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ä²Ëµï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+
 	}
-	
+
 	/*
-	 * ÔÚ¼ÓÔØ²Ëµ¥ºó£¬ĞèÒª¶¨Òå²Ëµ¥ÏàÓ¦ÊÂ¼ş
-	 * ÎªÊ²Ã´ÕâÀïµÄToastµÄÉÏÏÂÎÄÊÇthis£¬¶ø²»ÊÇFirstActivity¡£this
-	 * Í¨¹ıµ÷ÓÃgetItemIdÀ´ÅĞ¶ÏÎÒÃÇµã»÷µÄÊÇÄÄ¸ö²Ëµ¥Ïî
-	 * 
+	 * ï¿½Ú¼ï¿½ï¿½Ø²Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ó¦ï¿½Â¼ï¿½
+	 * ÎªÊ²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Toastï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½thisï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½FirstActivityï¿½ï¿½this
+	 * Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getItemIdï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ëµï¿½ï¿½ï¿½
+	 *
 	 */
 	 public boolean onOptionsItemSelected(MenuItem item){
 		 switch(item.getItemId()){
@@ -197,12 +216,11 @@ public class FirstActivity extends Activity {
 		 default:
 		 }
 	    return true;
-		 
+
 	 }
-	
-	
-	
-	
+
+
+
+
 
 }
-
