@@ -1,0 +1,24 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">AndroidUi</string>
+    <string name="text_view">This a TextView</string>
+    <string name="button">Button</string>
+    <string name="edittext_hint">Type something here</string>
+    <string name="imageview_content">This is a Image</string>
+    <string name="button2">Change Image</string>
+    <string name="button3">ProgressBar</string>
+    <string name="button4">AlterDialog</string>
+    <string name="button5">ProgressDialog</string>
+    <string name="button31">button1</string>
+    <string name="button32">Button2</string>
+    <string name="button33">Button3</string>
+    <string name="Button34">Button4</string>
+    <string name="button35">Button5</string>
+    <string name="button_back">Back</string>
+    <string name="button_edit">Edit</string>
+    <string name="titile_text">Title Text</string>
+    <string name="fruit_image">Fruit image</string>
+    <string name="button6">Forth Activity</string>
+    
+
+</resources>
