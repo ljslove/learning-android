@@ -1,0 +1,7 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">SendBroadcast</string>
+    <string name="button">Send Broadcast</string>
+    <string name="button2">SendOrderBroadcast</string>
+
+</resources>
