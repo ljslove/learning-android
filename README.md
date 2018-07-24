@@ -12,3 +12,9 @@ http表示启动浏览器
 geo表示显示地理位置
 del表示拨打电话
 
+Broadcast:
+SendBroadcast应用发送标准广播和有序广播
+FirstReceiver应用：接收静态的默认广播，接收来自SendBroadcast的标准广播（动态）和有序广播（静态）
+SecondReceiver应用：接收来自SendBroadcast的标准广播（动态）和有序广播（静态，并阻断广播）
+ThirdReceiver应用：接收来自SendBroadcast的有序广播（静态），因为SecondBroadc将广播阻断，所以该应用接收不到广播
+
