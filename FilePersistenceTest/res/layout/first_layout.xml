@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+    <EditText 
+        android:id="@+id/filetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fileedit"/>
+    
+    <Button 
+        android:id="@+id/filebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filebutton"/>
+    <Button 
+        android:id="@+id/readfilebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/readfilebutton"/>
+    <Button 
+        android:id="@+id/prebutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prebutton"/>
+    <Button 
+        android:id="@+id/prebutton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prereadbutton"/>
+    <Button 
+        android:id="@+id/createdatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createdatabase"/>
+    <Button
+        android:id="@+id/updatedatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/updatedatabase"/>
+    <Button 
+        android:id="@+id/adddata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adddata"/>
+    <Button
+        android:id="@+id/updatedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/updatedata"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+     <Button 
+        android:id="@+id/deletedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deletedata"/>
+      <Button 
+        android:id="@+id/retridata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retridata"/>
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

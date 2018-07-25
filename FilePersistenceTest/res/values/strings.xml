@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">FilePersistenceTest</string>
+    <string name="fileedit">Please input something</string>
+    <string name="filebutton">Save file</string>
+    <string name="readfilebutton">Read file</string>
+    <string name="prebutton">SharedPreferecnce-Save</string>
+    <string name="prereadbutton">SharedPreferences-Read</string>
+    <string name="textaccount">Account</string>
+    <string name="accounthint">Please intput account</string>
+    <string name="textpsd">Password</string>
+    <string name="psdhint">Please input password</string>
+    <string name="editrem">Remember password</string>
+    <string name="login">Login</string>
+    <string name="broadcast">SendBroadcast</string>
+    <string name="createdatabase">CreateDataBase</string>
+    <string name="adddata">Add data</string>
+    <string name="updatedatabase">Second Activity</string>
+    <string name="updatedata">Update Data</string>
+    <string name="deletedata">Delete Data</string>
+    <string name="retridata">Retrieve Data</string>
+    <string name="secondactivity">Second</string>
+
+</resources>
