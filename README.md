@@ -18,3 +18,8 @@ FirstReceiver应用：接收静态的默认广播，接收来自SendBroadcast的
 SecondReceiver应用：接收来自SendBroadcast的标准广播（动态）和有序广播（静态，并阻断广播）
 ThirdReceiver应用：接收来自SendBroadcast的有序广播（静态），因为SecondBroadc将广播阻断，所以该应用接收不到广播
 
+ContentProvider:
+ContentProvider需要另外两个类：
+SQLiteOpenHelper创建数据库和表
+SQLiteDatabase对表进行增删改查等操作
+
