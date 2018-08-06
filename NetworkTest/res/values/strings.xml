@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">NetworkTest</string>
+    <string name="webview">WebView</string>
+    <string name="xmlpull">XML pull</string>
+    <string name="xmlsax">XML SAX</string>
+    <string name="json">Json</string>
+    <string name="xmlpullbutton">Send Request</string>
+    <string name="xmlsaxbutton">Send Request</string>
+
+</resources>
