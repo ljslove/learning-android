@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">AndroidServiceTest</string>
+    <string name="firstbutton">Change Text</string>
+    <string name="firsttextview">Hello word</string>
+    <string name="startservice">Start Service</string>
+    <string name="stopservice">Stop Service</string>
+    <string name="bindservice">Bind Service</string>
+    <string name="unbindservice">Unbind Service</string>
+    <string name="threadservice">Thread Service</string>
+    <string name="intentservice">Intent Service</string>
+
+</resources>
